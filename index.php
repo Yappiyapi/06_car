@@ -45,24 +45,24 @@ class Car {
 class Taxi extends  Car {
   private $passenger;//現乗車人数を管理
 
-  public function getPassenger($passenger)
+  public function getPassenger()
   {
     return $this->passenger;
   }
 
-  public function getPickup($pickup) //乗車
+  public function getpickUp($passenger) //乗車
   {
-    return $this->pickUp = $passenger;
+    return $this->passenger = $passenger;
   }
 
-  public function getLower($lower)//降車
-  {
-    if ($this->$passenger - $lower > 0) {
-      echo $lower . '人降車しました。';
-    }else{
-      echo '降車人数に誤りがあります。';
-    }
-  }
+  // public function getlower($passenger)//降車
+  // {
+  //   if ($this->passenger - $passenger >= 0) {
+  //     echo $passenger . '人降車しました。';
+  //   }else{
+  //     echo '降車人数に誤りがあります。';
+  //   }
+  // }
 
   public function infomation()
   {
@@ -92,8 +92,8 @@ echo $taxi1->infomation();
 echo '<br>';
 
 // 2人降車
-$taxi1->lower(2);
-echo '<br>';
+// $taxi1->lower(2);
+// echo '<br>';
 
-// 一人降車
-$taxi1->lower(2);
+// // 一人降車
+// $taxi1->lower(2);
